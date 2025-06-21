@@ -98,24 +98,24 @@ const processSteps = [
 
 const testimonials = [
   {
-    name: 'Sarah Mitchell',
-    piece: 'Diamond Engagement Ring',
+    name: 'Anushka Perera',
+    piece: 'Ceylon Sapphire Engagement Ring',
     rating: 5,
-    text: 'The process was incredible from start to finish. They captured exactly what I envisioned and the quality is outstanding.',
+    text: 'Dewaka and his team created the most stunning engagement ring with a gorgeous blue Ceylon sapphire. The traditional Kandyan design elements made it truly special for our family.',
     image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
   },
   {
-    name: 'Michael Chen',
-    piece: 'Anniversary Necklace',
+    name: 'Rohan Wickramasinghe',
+    piece: 'Anniversary Necklace Set',
     rating: 5,
-    text: 'Working with Radiant Dazzles was a dream. The attention to detail and craftsmanship exceeded all expectations.',
+    text: 'Working with Radiant Dazzles was exceptional. They incorporated our family\'s vintage Ceylon rubies into a modern design that honored both tradition and contemporary elegance.',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
   },
   {
-    name: 'Emma Rodriguez',
-    piece: 'Custom Earrings',
+    name: 'Lakshika Fernando',
+    piece: 'Traditional Kandyan Earrings',
     rating: 5,
-    text: 'They transformed my grandmother\'s vintage stones into the most beautiful modern earrings. Absolutely perfect.',
+    text: 'They transformed my grandmother\'s original Ceylon star sapphires into the most exquisite traditional earrings for my wedding. The craftsmanship is absolutely perfect.',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
   }
 ];

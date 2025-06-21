@@ -1,39 +1,40 @@
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Gem, Crown, Sparkles } from 'lucide-react';
 
 const About = () => {
   const teamMembers = [
     {
-      name: 'Alessandro Romano',
+      name: 'Dewaka Embuldeniya',
       role: 'Master Jeweler & Founder',
       experience: '35+ years',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-      bio: 'Alessandro founded Radiant Dazzles with a vision to create timeless pieces that capture life\'s most precious moments.'
+      bio: 'Dewaka founded Radiant Dazzles with a vision to showcase Sri Lanka\'s rich jewelry-making heritage while creating modern masterpieces for discerning clients worldwide.'
     },
     {
-      name: 'Isabella Chen',
+      name: 'Priyani Wijeratne',
       role: 'Lead Designer',
-      experience: '15+ years',
+      experience: '18+ years',
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-      bio: 'Isabella specializes in contemporary designs that blend modern aesthetics with classical craftsmanship techniques.'
+      bio: 'Priyani specializes in contemporary designs inspired by Sri Lankan culture, seamlessly blending traditional motifs with modern elegance.'
     },
     {
-      name: 'Marcus Thompson',
-      role: 'Gemologist',
-      experience: '20+ years',
+      name: 'Chandana Fernando',
+      role: 'Master Gemologist',
+      experience: '25+ years',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-      bio: 'Marcus ensures every gemstone meets our exacting standards, bringing expertise from the world\'s finest mines.'
+      bio: 'Chandana is an expert in Sri Lankan precious stones, with deep knowledge of our island\'s world-renowned sapphires, rubies, and other gems.'
     }
   ];
 
   const milestones = [
-    { year: '1985', event: 'Alessandro Romano establishes Radiant Dazzles in Beverly Hills' },
-    { year: '1992', event: 'Opened our flagship showroom in the prestigious Diamond District' },
-    { year: '2001', event: 'Launched our custom design atelier with in-house master craftsmen' },
-    { year: '2010', event: 'Received recognition as "Outstanding Jeweler of the Year"' },
-    { year: '2018', event: 'Celebrated our 2,000th custom creation milestone' },
-    { year: '2024', event: 'Continues to set the standard for luxury jewelry excellence' }
+    { year: '1989', event: 'Dewaka Embuldeniya establishes Radiant Dazzles in the heart of Kandy' },
+    { year: '1995', event: 'Opened our flagship showroom on prestigious Queen\'s Road' },
+    { year: '2003', event: 'Became the first certified Sri Lankan jeweler for international gem authentication' },
+    { year: '2008', event: 'Launched our custom design atelier featuring traditional Sri Lankan craftsmanship' },
+    { year: '2015', event: 'Received the National Craftsmanship Excellence Award from the Government of Sri Lanka' },
+    { year: '2020', event: 'Celebrated our 2,500th custom creation and expanded to serve international clients' },
+    { year: '2024', event: 'Continues to be Kandy\'s premier destination for luxury jewelry and precious gems' }
   ];
 
   return (
@@ -51,7 +52,7 @@ const About = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="font-playfair text-5xl font-bold mb-4">About Radiant Dazzles</h1>
-            <p className="text-xl text-luxury-gold">Crafting Excellence Since 1985</p>
+            <p className="text-xl text-luxury-gold">Crafting Excellence Since 1989</p>
           </div>
         </div>
       </section>
@@ -63,21 +64,24 @@ const About = () => {
             <h2 className="luxury-heading text-4xl mb-8">Our Story</h2>
             <div className="space-y-6 luxury-text text-lg">
               <p>
-                What began as a young Italian craftsman's dream in 1985 has evolved into one of Beverly Hills' 
-                most respected jewelry houses. Alessandro Romano arrived in America with nothing but his tools, 
-                his heritage of traditional jewelry-making techniques, and an unwavering commitment to excellence.
+                What began as a passionate young Sri Lankan craftsman's dream in 1989 has evolved into 
+                Kandy's most prestigious jewelry house. Dewaka Embuldeniya started Radiant Dazzles with 
+                a vision to showcase the extraordinary beauty of Sri Lankan gemstones and the island's 
+                rich tradition of jewelry craftsmanship to the world.
               </p>
               <p>
-                Over nearly four decades, Radiant Dazzles has become synonymous with exceptional quality, 
-                innovative design, and personalized service. We've had the honor of creating engagement rings 
-                for Hollywood celebrities, designing family heirlooms that span generations, and crafting 
-                unique pieces that celebrate life's most precious moments.
+                Nestled in the cultural capital of Sri Lanka, our atelier draws inspiration from the 
+                island's 2,500-year history of gem mining and jewelry making. Sri Lanka, known as the 
+                "Gem Island," has been a source of the world's finest sapphires, rubies, and other 
+                precious stones for millennia. We honor this heritage while creating contemporary 
+                masterpieces for clients around the globe.
               </p>
               <p>
-                Today, our team of master craftsmen continues Alessandro's tradition of excellence, combining 
-                time-honored techniques with modern precision to create jewelry that is both timeless and 
-                contemporary. Every piece that leaves our atelier carries with it our promise of quality, 
-                beauty, and lasting value.
+                For over three decades, Radiant Dazzles has been synonymous with exceptional quality, 
+                authentic Sri Lankan craftsmanship, and personalized service. We've had the privilege 
+                of creating engagement rings featuring Ceylon sapphires, designing traditional Kandyan 
+                jewelry for cultural ceremonies, and crafting unique pieces that celebrate both Sri Lankan 
+                heritage and modern luxury.
               </p>
             </div>
           </div>
@@ -89,37 +93,37 @@ const About = () => {
         <div className="container mx-auto px-6">
           <h2 className="luxury-heading text-4xl text-center mb-12">Our Values</h2>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-luxury-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">💎</span>
+                <Gem className="w-8 h-8 text-luxury-gold" />
+              </div>
+              <h3 className="luxury-heading text-xl mb-4">Authenticity</h3>
+              <p className="luxury-text">
+                Every gemstone is sourced responsibly from Sri Lankan mines, certified for 
+                authenticity and quality, ensuring you receive genuine Ceylon gems.
+              </p>
+            </div>
+            
+            <div className="text-center p-6">
+              <div className="w-16 h-16 bg-luxury-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Crown className="w-8 h-8 text-luxury-gold" />
+              </div>
+              <h3 className="luxury-heading text-xl mb-4">Heritage</h3>
+              <p className="luxury-text">
+                We preserve and celebrate Sri Lanka's ancient jewelry-making traditions, 
+                passed down through generations of skilled artisans in Kandy.
+              </p>
+            </div>
+            
+            <div className="text-center p-6">
+              <div className="w-16 h-16 bg-luxury-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Sparkles className="w-8 h-8 text-luxury-gold" />
               </div>
               <h3 className="luxury-heading text-xl mb-4">Excellence</h3>
               <p className="luxury-text">
-                We never compromise on quality. Every piece undergoes rigorous inspection to ensure 
-                it meets our exacting standards for craftsmanship and beauty.
-              </p>
-            </div>
-            
-            <div className="text-center p-6">
-              <div className="w-16 h-16 bg-luxury-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🤝</span>
-              </div>
-              <h3 className="luxury-heading text-xl mb-4">Trust</h3>
-              <p className="luxury-text">
-                Building lasting relationships with our clients is at the heart of everything we do. 
-                Your trust is our most precious asset.
-              </p>
-            </div>
-            
-            <div className="text-center p-6">
-              <div className="w-16 h-16 bg-luxury-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">✨</span>
-              </div>
-              <h3 className="luxury-heading text-xl mb-4">Innovation</h3>
-              <p className="luxury-text">
-                While honoring traditional techniques, we embrace new technologies and design 
-                approaches to create truly unique pieces.
+                From traditional Kandyan designs to contemporary pieces, we maintain 
+                the highest standards of craftsmanship in every creation.
               </p>
             </div>
           </div>
@@ -175,13 +179,76 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Sri Lankan Heritage Section */}
       <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Content */}
+              <div>
+                <h2 className="luxury-heading text-4xl mb-6">The Ceylon Advantage</h2>
+                <div className="space-y-4 luxury-text">
+                  <p>
+                    Sri Lanka, historically known as Ceylon, is world-renowned for producing some of 
+                    the finest gemstones on Earth. Our island nation has been a treasure trove of 
+                    precious stones for over 2,000 years, with ancient trade routes bringing merchants 
+                    from across the globe to seek our exceptional gems.
+                  </p>
+                  
+                  <p>
+                    From the legendary blue sapphires of Ratnapura to the vibrant star sapphires found 
+                    in our highland regions, Ceylon gems are prized for their exceptional clarity, 
+                    color, and brilliance. Each stone tells a story of our island's geological wonder 
+                    and our craftsmen's expertise.
+                  </p>
+                  
+                  <p>
+                    At Radiant Dazzles, we work directly with responsible local miners and maintain 
+                    strict ethical sourcing standards, ensuring that every gemstone in our collection 
+                    represents the very best of Sri Lankan quality and craftsmanship heritage.
+                  </p>
+                </div>
+
+                {/* Key Stats */}
+                <div className="grid grid-cols-3 gap-8 pt-8">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-luxury-gold mb-2">35+</div>
+                    <div className="text-sm text-gray-600">Years Experience</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-luxury-gold mb-2">2,500+</div>
+                    <div className="text-sm text-gray-600">Custom Pieces</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-luxury-gold mb-2">100%</div>
+                    <div className="text-sm text-gray-600">Ceylon Authentic</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Image */}
+              <div>
+                <div className="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80"
+                    alt="Traditional Sri Lankan jewelry craftsmanship"
+                    className="w-full h-96 lg:h-[500px] object-cover rounded-lg shadow-xl"
+                  />
+                  <div className="absolute inset-0 bg-luxury-teal bg-opacity-10 rounded-lg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-luxury-light-gray">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="luxury-heading text-3xl mb-4">Experience the Radiant Dazzles Difference</h2>
+          <h2 className="luxury-heading text-3xl mb-4">Experience Authentic Ceylon Luxury</h2>
           <p className="luxury-text text-lg mb-8 max-w-2xl mx-auto">
-            Visit our showroom and discover why discerning clients have trusted us for nearly four decades 
-            to create their most treasured pieces.
+            Visit our showroom in the heart of Kandy and discover why discerning clients worldwide 
+            choose Radiant Dazzles for their most treasured jewelry pieces featuring authentic Ceylon gems.
           </p>
           <button className="luxury-button-primary text-lg px-10 py-4">
             Schedule a Consultation
