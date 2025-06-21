@@ -126,8 +126,9 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-medium mb-1">Visit Our Showroom</h4>
                       <p className="text-gray-300 text-sm">
-                        123 Luxury Row, Diamond District<br />
-                        Beverly Hills, CA 90210
+                        No. 45, Queen's Road<br />
+                        Kandy, Central Province<br />
+                        Sri Lanka
                       </p>
                     </div>
                   </div>
@@ -137,8 +138,8 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-medium mb-1">Call Us</h4>
                       <p className="text-gray-300 text-sm">
-                        +1 (555) 123-4567<br />
-                        Toll Free: +1 (800) 555-GEMS
+                        +94 81 222 3456<br />
+                        +94 71 123 4567
                       </p>
                     </div>
                   </div>

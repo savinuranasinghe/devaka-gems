@@ -11,9 +11,10 @@ const Footer = () => {
           <div>
             <h3 className="font-playfair text-xl font-semibold mb-6 text-luxury-gold">Contact Information</h3>
             <div className="space-y-3 text-gray-300">
-              <p>123 Luxury Row, Diamond District</p>
-              <p>Beverly Hills, CA 90210</p>
-              <p>Phone: +1 (555) 123-4567</p>
+              <p>No. 45, Queen's Road</p>
+              <p>Kandy, Central Province </p>
+              <p>Sri Lanka</p>
+              <p>Phone: +94 81 222 3456</p>
               <p>Email: info@radiantdazzles.com</p>
             </div>
           </div>
