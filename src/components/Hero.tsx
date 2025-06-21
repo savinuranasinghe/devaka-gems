@@ -59,7 +59,7 @@ const Hero = () => {
           </p>
           <button
             onClick={scrollToServices}
-            className="luxury-button-primary text-lg px-10 py-4 rounded-sm"
+            className="luxury-button-primary text-lg px-10 py-4"
           >
             Begin Your Custom Journey
           </button>
@@ -71,7 +71,7 @@ const Hero = () => {
         {heroImages.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-3 h-3 transition-all duration-300 ${
               index === currentImageIndex ? 'bg-luxury-gold' : 'bg-white bg-opacity-50'
             }`}
             onClick={() => setCurrentImageIndex(index)}
