@@ -1,8 +1,7 @@
-
 import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ExternalLink } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -36,6 +35,11 @@ const Contact = () => {
       [e.target.name]: e.target.value
     }));
   };
+
+  // Coordinates for Kandy, Sri Lanka (approximate location for Queen's Road)
+  const latitude = 7.2906;
+  const longitude = 80.6337;
+  const address = "No. 45, Queen's Road, Kandy, Central Province 20000, Sri Lanka";
 
   return (
     <div className="min-h-screen">
@@ -107,6 +111,7 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
+                        placeholder="+94 77 123 4567"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all duration-300"
                       />
                     </div>
@@ -208,7 +213,7 @@ const Contact = () => {
                           <p>Saturday: 10:00 AM - 6:00 PM</p>
                           <p>Sunday: 12:00 PM - 5:00 PM</p>
                           <p className="text-sm text-luxury-gold mt-2">
-                            Private appointments available outside business hours
+                            *Appointments available outside business hours
                           </p>
                         </div>
                       </div>
@@ -216,20 +221,51 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Map Placeholder */}
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <p className="text-gray-500">Interactive Map Coming Soon</p>
+                {/* Interactive Map */}
+                <div className="space-y-4">
+                  <h3 className="font-medium text-luxury-teal text-lg">Find Us On Map</h3>
+                  
+                  {/* Option 1: Google Maps Embed */}
+                  <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                    <iframe
+                      src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTcnMjYuMiJOIDgwwrAzOCcwMS4zIkU!5e0!3m2!1sen!2slk!4v1629789456789!5m2!1sen!2slk&q=${encodeURIComponent(address)}`}
+                      width="100%"
+                      height="300"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Radiant Dazzles Location"
+                      className="w-full h-64 md:h-80"
+                    ></iframe>
+                  </div>
+
+                  {/* Map Action Buttons */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center px-4 py-3 bg-luxury-gold text-luxury-teal rounded-lg font-medium hover:bg-opacity-90 transition-all duration-300"
+                    >
+                      <ExternalLink size={16} className="mr-2" />
+                      View in Google Maps
+                    </a>
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center px-4 py-3 border-2 border-luxury-teal text-luxury-teal rounded-lg font-medium hover:bg-luxury-teal hover:text-white transition-all duration-300"
+                    >
+                      <MapPin size={16} className="mr-2" />
+                      Get Directions
+                    </a>
+                  </div>
                 </div>
 
-                {/* CTA Buttons */}
-                <div className="space-y-4">
-                  <button className="w-full luxury-button-primary py-3">
-                    Schedule Private Consultation
-                  </button>
-                  <button className="w-full luxury-button-outline py-3">
-                    WhatsApp Us Now
-                  </button>
-                </div>
+
+
+
               </div>
             </div>
           </div>
