@@ -168,9 +168,9 @@ const Contact = () => {
                       <div>
                         <h3 className="font-medium text-luxury-teal mb-2">Address</h3>
                         <p className="text-gray-600">
-                          123 Luxury Row, Diamond District<br />
-                          Beverly Hills, CA 90210<br />
-                          United States
+                          No. 45, Queen's Road<br />
+                          Kandy, Central Province 20000<br />
+                          Sri Lanka
                         </p>
                       </div>
                     </div>
@@ -180,9 +180,9 @@ const Contact = () => {
                       <div>
                         <h3 className="font-medium text-luxury-teal mb-2">Phone</h3>
                         <p className="text-gray-600">
-                          Main: +1 (555) 123-4567<br />
-                          Toll Free: +1 (800) 555-GEMS<br />
-                          WhatsApp: +1 (555) 123-4568
+                          Landline: +94 81 222 3456<br />
+                          Mobile: +94 77 123 4567<br />
+                          WhatsApp: +94 77 123 4567
                         </p>
                       </div>
                     </div>
